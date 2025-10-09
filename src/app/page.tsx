@@ -3,6 +3,7 @@ import CreditsModel from "@/components/home/CreditsModel";
 import InvestorsHub from "@/components/home/InvestorsHub";
 import OurProcess from "@/components/home/OurProcess";
 import ResearchCalls from "@/components/home/ResearchCalls";
+import TeamSpace from "@/components/home/TeamSpace";
 import WhyDalalStreet from "@/components/home/WhyDalalStreet";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
     <WhyDalalStreet/>
     <OurProcess/>
     <InvestorsHub/>
+    <TeamSpace/>
     {/* <AiFillCodeSandboxSquare/> */}
     </>
 
