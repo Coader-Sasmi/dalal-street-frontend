@@ -1,5 +1,10 @@
 "use client";
-import { AccountBalanceWallet, ArrowUpward, BarChart, Description } from "@mui/icons-material";
+import {
+  AccountBalanceWallet,
+  ArrowUpward,
+  BarChart,
+  Description,
+} from "@mui/icons-material";
 
 export default function InvestmentSteps() {
   const steps = [
@@ -11,7 +16,7 @@ export default function InvestmentSteps() {
     {
       icon: <AccountBalanceWallet fontSize="large" className="text-blue-500" />,
       title: "Invest Seamlessly",
-      desc: "One-click execution through integrated brokers. Invest in minutes, with no hidden fees.",
+      desc: "One-click execution through fully integrated brokers effortlessly. Invest in minutes, with no hidden fees.",
     },
     {
       icon: <BarChart fontSize="large" className="text-blue-500" />,
@@ -26,33 +31,42 @@ export default function InvestmentSteps() {
   ];
 
   return (
-    <section className="bg-white py-12 px-6">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">
+    <section className="main-container py-16">
+      <div className="flex flex-col gap-4 justify-center items-center text-center">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
           A Simple Path to Invest: Structured, Transparent, and Smart
         </h2>
-        <p className="text-gray-600 mb-12">
+        <p className="text-gray-600 mb-12 ">
           Getting started with Portfolios by DalalStreet is straightforward. Here’s how it works:
         </p>
 
-        {/* Step Timeline */}
-        <div className="relative flex justify-between items-start">
-          {/* Horizontal Line */}
-          <div className="absolute top-6 left-0 w-full h-0.5 bg-gray-200"></div>
+        {/* Timeline */}
+        <div className="relative w-full">
+          {/* Horizontal Line for Desktop */}
+          <div className="hidden md:block absolute top-6 left-0 w-full h-0.5 bg-gray-200"></div>
 
-          {steps.map((step, index) => (
-            <div key={index} className="relative w-1/4 flex flex-col items-center px-2">
-              {/* Circle with Icon */}
-              <div className="bg-white border-2 border-blue-100 rounded-full p-3 z-10">
-                {step.icon}
-              </div>
-              {/* Text */}
-              <div className="mt-6">
-                <h3 className="text-lg font-semibold text-gray-900">{step.title}</h3>
-                <p className="text-sm text-gray-600 mt-2">{step.desc}</p>
-              </div>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-12 md:gap-5">
+        {steps.map((step, index) => (
+          <div
+            key={index}
+            className="relative w-full md:w-1/4 flex flex-col items-center text-center"
+          >
+            {/* Circle with Icon */}
+            <div className="bg-white border-2 border-blue-100 rounded-full p-3 z-10 shadow-sm">
+              {step.icon}
             </div>
-          ))}
+
+            {/* Text */}
+            <div className="py-6 flex flex-col gap-2 items-center">
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                {step.title}
+              </h3>
+              <p className="text-sm text-gray-600 max-w-xs">{step.desc}</p>
+            </div>
+          </div>
+        ))}
+
+          </div>
         </div>
       </div>
     </section>

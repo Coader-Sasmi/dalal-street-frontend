@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function ResearchCalls() {
   return (
-    <section className="main-container bg-white py-12">
+    <section className="main-container bg-white py-32">
       <div className="flex lg:flex-row flex-col justify-between gap-10 items-center">
         
         {/* Left Section */}
@@ -28,10 +28,10 @@ export default function ResearchCalls() {
         {/* Right Section */}
         <div className="relative">
           <Image
-            src="/home1.webp"
+            src="/HeroBg.jpg"
             alt="Research Calls"
             width={700}
-            height={600}
+            height={800}
             className="rounded-2xl shadow "
           />
           
@@ -58,12 +58,12 @@ export default function ResearchCalls() {
             </a>
           </div> */}
                 {/* Dots Navigation */}
-      <div className="flex justify-center mt-6 space-x-2">
+      {/* <div className="flex justify-center mt-6 space-x-2">
         <span className="w-2 h-2 bg-gray-400 rounded-full"></span>
         <span className="w-2 h-2 bg-gray-400 rounded-full"></span>
         <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
         <span className="w-2 h-2 bg-gray-400 rounded-full"></span>
-      </div>
+      </div> */}
         </div>
         
       </div>

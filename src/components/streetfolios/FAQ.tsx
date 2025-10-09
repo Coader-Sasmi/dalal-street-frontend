@@ -48,11 +48,12 @@ export default function FAQ() {
   };
 
   return (
-    <section className="bg-white py-16 px-6">
-      <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+    <section className="main-container py-16 flex flex-col justify-center w-full items-center">
+        <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
           Got Questions? We’ve Got Answers.
         </h2>
+
+        <div className="lg:w-4/5 py-5">
 
         {faqs.map((faq, index) => (
           <div key={index} className="border-b border-gray-300 py-4">
@@ -72,7 +73,8 @@ export default function FAQ() {
             )}
           </div>
         ))}
-      </div>
+        </div>
+
     </section>
   );
 }

@@ -26,8 +26,8 @@ export default function WhyChoosePortfolios() {
   ];
 
   return (
-    <section className="bg-gray-50 py-12 px-6">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="main-container py-16">
+      <div className="flex flex-col gap-8 justify-center items-center">
         <h2 className="text-3xl font-bold text-gray-900 mb-10">
           Why Choose Portfolios by DalalStreet?
         </h2>
@@ -36,13 +36,13 @@ export default function WhyChoosePortfolios() {
           {features.map((item, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+              className="bg-white px-4 py-6 rounded-2xl border border-gray-100 hover:shadow-lg transition flex flex-col items-center justify-center gap-3"
             >
               <div className="flex justify-center mb-4">{item.icon}</div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              <h3 className="text-lg font-semibold text-gray-900 text-center">
                 {item.title}
               </h3>
-              <p className="text-sm text-gray-600">{item.desc}</p>
+              <p className=" text-gray-600 text-center">{item.desc}</p>
             </div>
           ))}
         </div>

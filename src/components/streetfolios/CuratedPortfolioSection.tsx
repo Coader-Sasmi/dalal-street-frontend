@@ -1,13 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
 
 const CuratedPortfolioSection = () => {
   return (
     <section
-      className="w-full bg-gradient-to-b from-white to-[#f6faff] py-12 md:py-20 px-4 md:px-16 flex flex-col md:flex-row items-center justify-between gap-10 rounded-3xl shadow-sm"
+      className="w-full bg-gradient-to-b from-white to-[#f6faff] py-12 md:py-20 "
     >
+      <div className="main-container flex flex-col md:flex-row items-center justify-between gap-10">
       {/* Left Content */}
       <div className="md:w-1/2 text-center md:text-left">
         <h2 className="text-3xl md:text-5xl font-bold leading-tight text-gray-900">
@@ -40,6 +40,8 @@ const CuratedPortfolioSection = () => {
           />
         </div>
       </div>
+      </div>
+
     </section>
   );
 };
