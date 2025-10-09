@@ -1,9 +1,9 @@
 "use client";
 import {
-  Insights,
-  Favorite,
-  ShowChart,
   Business,
+  Favorite,
+  Insights,
+  ShowChart,
   TrendingUp,
 } from "@mui/icons-material";
 
@@ -82,15 +82,17 @@ export default function ModelPortfolios() {
   ];
 
   return (
-    <section className="bg-gray-50 py-12 px-6">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">
+    <section className="bg-gray-50">
+      <div className="main-container py-16 flex flex-col justify-center items-center gap-8">
+        <div className="flex flex-col justify-center items-center gap-4">
+        <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
           Model Portfolios That Fit Your Goals
         </h2>
-        <p className="text-gray-600 mb-12">
+        <p className="text-gray-600 md:mb-12 mb-5 text-center">
           Choose from a range of professionally constructed portfolios, each
           designed to match different investor profiles and financial needs.
         </p>
+        </div>
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
