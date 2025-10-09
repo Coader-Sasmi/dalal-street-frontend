@@ -70,7 +70,7 @@ export default function UserForm({ onClose }: UserFormProps) {
       {/* Gmail */}
       <div className="relative">
         <label className="block text-sm font-medium text-gray-700 mb-1">
-          Gmail
+          Email*
         </label>
         <input
           type="email"

@@ -4,9 +4,12 @@ import InvestmentSteps from '@/components/streetfolios/InvestmentSteps'
 import ModelPortfolios from '@/components/streetfolios/ModelPortfolios'
 import WhyChoosePortfolios from '@/components/streetfolios/WhyChoose'
 
+
 export default function page() {
+   
   return (
     <>
+    
       <CuratedPortfolioSection/>
       <WhyChoosePortfolios/>
       <InvestmentSteps/>

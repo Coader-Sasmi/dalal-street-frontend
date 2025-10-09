@@ -5,10 +5,40 @@ import OurProcess from "@/components/home/OurProcess";
 import ResearchCalls from "@/components/home/ResearchCalls";
 import TeamSpace from "@/components/home/TeamSpace";
 import WhyDalalStreet from "@/components/home/WhyDalalStreet";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+    <Head>
+        <title>Dalal Street: SEBI Registered Research Recommendations | The Dalal Street Hub</title>
+        <meta
+          name="description"
+          content="Research Calls For Every Trader. India’s first SEBI-registered credits-based subscription model. Pay only for successful research calls."
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://thedalalstreethub.com/" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://thedalalstreethub.com/" />
+        <meta property="og:title" content="Dalal Street: SEBI Registered Research Recommendations" />
+        <meta
+          property="og:description"
+          content="Research Calls For Every Trader. India’s first SEBI-registered credits-based subscription model. Pay only for successful research calls."
+        />
+        <meta property="og:image" content="/path-to-social-image.jpg" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://thedalalstreethub.com/" />
+        <meta name="twitter:title" content="Dalal Street: SEBI Registered Research Recommendations" />
+        <meta
+          name="twitter:description"
+          content="Research Calls For Every Trader. India’s first SEBI-registered credits-based subscription model. Pay only for successful research calls."
+        />
+        <meta name="twitter:image" content="/path-to-social-image.jpg" />
+      </Head>
     <ResearchCalls/>
     <CreditsModel/>
     <CreditsFeatures/>
