@@ -36,7 +36,7 @@ export default function UserForm({ onClose }: UserFormProps) {
       {/* Name */}
       <div className="relative">
         <label className="block text-sm font-medium text-gray-700 mb-1">
-          Name
+          Name*
         </label>
         <input
           type="text"
@@ -53,7 +53,7 @@ export default function UserForm({ onClose }: UserFormProps) {
       {/* Phone */}
       <div className="relative">
         <label className="block text-sm font-medium text-gray-700 mb-1">
-          Phone
+          Phone*
         </label>
         <input
           type="tel"
