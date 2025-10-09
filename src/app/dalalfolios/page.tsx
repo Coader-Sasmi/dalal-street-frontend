@@ -6,7 +6,7 @@ import WhyChoosePortfolios from '@/components/streetfolios/WhyChoose'
 
 
 export default function page() {
-   const canonicalUrl = `https://thedalalstreethub.com${pagePath}`;
+   
   return (
     <>
     
