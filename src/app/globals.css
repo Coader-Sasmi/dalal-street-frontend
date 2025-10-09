@@ -53,14 +53,25 @@ body {
   }
 }
 
-
-
-/* .hide-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+/* Header Text Scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-} */
+.animate-scroll {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scroll 25s linear infinite;
+  will-change: transform;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
 

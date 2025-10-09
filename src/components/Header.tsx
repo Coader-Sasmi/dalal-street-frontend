@@ -13,7 +13,28 @@ export default function Navbar() {
   const [isOpenLogin, setIsOpenLogin] = useState(false);
 
   return (
-    <nav className="w-full shadow-sm bg-[#1f2023] sticky top-0 z-50">
+    <div className="sticky top-0 z-50 bg-white">
+    <div className="w-full overflow-hidden py-3">
+      <div className="animate-scroll whitespace-nowrap">
+    <p className="inline-block text-[#bd3f41] text-sm sm:text-base font-semibold px-6 text-center">
+      🔒 To ensure a secure transaction, please verify details with our support team ☎️ 
+      <span className="font-semibold"> +91-9148638118</span> before making payment.
+    </p>
+    <p className="inline-block text-[#bd3f41] text-sm sm:text-base font-semibold px-4 text-center">
+      🔒 To ensure a secure transaction, please verify details with our support team ☎️ 
+      <span className="font-semibold"> +91-9148638118</span> before making payment.
+    </p>
+    <p className="inline-block text-[#bd3f41] text-sm sm:text-base font-semibold px-4 text-center">
+      🔒 To ensure a secure transaction, please verify details with our support team ☎️ 
+      <span className="font-semibold"> +91-9148638118</span> before making payment.
+    </p>
+    <p className="inline-block text-[#bd3f41] text-sm sm:text-base font-semibold px-4 text-center">
+      🔒 To ensure a secure transaction, please verify details with our support team ☎️ 
+      <span className="font-semibold"> +91-9148638118</span> before making payment.
+    </p>
+      </div>
+    </div>
+    <div className="w-full shadow-sm bg-[#1f2023]">
       <div className="main-container py-2">
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -23,7 +44,7 @@ export default function Navbar() {
             alt="Dalal Street Logo"
             width={260}
             height={60}
-            className="h-auto w-[55%]"
+            className="h-auto w-[70%]"
             priority
           />
         </Link>
@@ -159,6 +180,8 @@ export default function Navbar() {
         </div>
       )}
 
-    </nav>
+    </div>
+    </div>
+
   );
 }
