@@ -108,6 +108,9 @@ const TradingPlansWithFilter = () => {
       selectedPeriod.length === 0 || selectedPeriod.includes(plan.period);
     return matchRisk && matchType && matchPeriod;
   });
+   const handleClick = () => {
+    window.open("https://razorpay.me/@indammaarjunsonar", "_blank"); // opens in a new tab
+  };
 
   return (
     <div className="flex flex-col md:flex-row gap-6 min-h-screen my-16">
@@ -234,7 +237,7 @@ const TradingPlansWithFilter = () => {
                   {/* Min. Investment: */}
                   <span className="font-semibold">{plan.investment}</span>
                 </span>
-                <button onClick={() => setIsOpen(true)}
+                <button onClick={handleClick}
                  className="bg-blue-600 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition">
                   BUY NOW
                 </button>
