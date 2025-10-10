@@ -1,6 +1,5 @@
 "use client";
-import Image from "next/image";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 interface Plan {
   title: string;
@@ -76,16 +75,6 @@ const TradingPlansWithFilter = () => {
   const [selectedRisk, setSelectedRisk] = useState<string[]>([]);
   const [selectedType, setSelectedType] = useState<string[]>([]);
   const [selectedPeriod, setSelectedPeriod] = useState<string[]>([]);
-
-  const [isOpen, setIsOpen] = useState(false);
-   const modalRef = useRef<HTMLDivElement>(null);
-
-  // Close when clicking outside
-  const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
-      setIsOpen(false);
-    }
-  };
 
   const handleCheckbox = (
     value: string,
@@ -250,36 +239,6 @@ const TradingPlansWithFilter = () => {
           <p className="text-center text-gray-500 mt-10">No plans match your filters.</p>
         )}
       </div>
-            {/* Modal */}
-{/* Modal */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 flex items-center justify-center bg-black/50 z-[99]"
-          onClick={handleBackdropClick}
-        >
-          <div
-            ref={modalRef}
-            className="bg-white rounded-xl shadow-lg p-3 relative animate-slide-up"
-          >
-            {/* Close Button */}
-            <button
-              onClick={() => setIsOpen(false)}
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl font-bold"
-            >
-              &times;
-            </button>
-
-            <Image
-              src="/QR_code.jpeg"
-              alt="Dalal Street Logo"
-              width={600}
-              height={300}
-              className="h-auto w-auto"
-              priority
-            />
-          </div>
-        </div>
-      )}
     </div>
   );
 };

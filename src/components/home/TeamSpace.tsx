@@ -1,52 +1,67 @@
-
 export default function TeamSpace() {
   return (
-    <div className="main-container flex flex-col gap-8 py-16">
-        <h2 className="text-5xl font-bold text-gray-900 mb-6 text-center">Team Space</h2>
+    <div className="main-container flex flex-col gap-8 py-10 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center">
+        Team Space
+      </h2>
 
-        <div className="flex flex-col md:flex-row w-full gap-6">
-        {/* Large image */}
-        <div className="w-full md:w-3/4 flex flex-col gap-6">
+      {/* Main grid layout */}
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        {/* LEFT SIDE (large section) */}
+        <div className="lg:col-span-3 flex flex-col gap-6">
+          {/* Large main image */}
+          <div className="w-full h-64 sm:h-80 md:h-[26rem] lg:h-[31rem] overflow-hidden rounded-xl">
             <img
-            src="/Team.jpg"
-            alt="team"
-            className="rounded-xl w-full h-80 md:h-[29rem] object-cover"
+              src="/Team.jpg"
+              alt="team"
+              className="w-full h-full object-cover"
             />
-            <div className="flex md:flex-row flex-col gap-6">
-            <img
-            src="/Team4.jpeg"
-            alt="team"
-            className="rounded-xl w-full h-80 md:h-[16rem] object-cover"
-            />
-            <img
-            src="/Team5.jpeg"
-            alt="team"
-            className="rounded-xl w-full h-80 md:h-[16rem] object-cover"
-            />
+          </div>
 
+          {/* Two smaller images below */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="w-full h-48 sm:h-56 md:h-[14rem] lg:h-[18rem] overflow-hidden rounded-xl">
+              <img
+                src="/Team4.jpeg"
+                alt="team"
+                className="w-full h-full object-cover"
+              />
             </div>
+            <div className="w-full h-48 sm:h-56 md:h-[14rem] lg:h-[18rem] overflow-hidden rounded-xl">
+              <img
+                src="/Team5.jpeg"
+                alt="team"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
         </div>
 
-        {/* Small images */}
-        <div className="w-full md:w-1/4 flex flex-col gap-4 sm:gap-6">
+        {/* RIGHT SIDE (3 stacked images) */}
+        <div className="flex flex-col gap-6">
+          <div className="w-full h-52 sm:h-56 md:h-[14rem] lg:h-[15.9rem] overflow-hidden rounded-xl">
             <img
-            src="/Team1.jpeg"
-            alt="team"
-            className="rounded-xl w-full h-80 md:h-[14.5rem] object-cover"
+              src="/Team1.jpeg"
+              alt="team"
+              className="w-full h-full object-cover"
             />
+          </div>
+          <div className="w-full h-52 sm:h-56 md:h-[14rem] lg:h-[15.9rem] overflow-hidden rounded-xl">
             <img
-            src="/Team2.jpeg"
-            alt="team"
-            className="rounded-xl w-full h-80 md:h-[14.5rem] object-cover"
+              src="/Team2.jpeg"
+              alt="team"
+              className="w-full h-full object-cover"
             />
+          </div>
+          <div className="w-full h-52 sm:h-56 md:h-[14rem] lg:h-[15.9rem] overflow-hidden rounded-xl">
             <img
-            src="/Team3.jpeg"
-            alt="team"
-            className="rounded-xl w-full h-80 md:h-[14.5rem] object-cover"
+              src="/Team3.jpeg"
+              alt="team"
+              className="w-full h-full object-cover"
             />
+          </div>
         </div>
-        </div>
-
+      </div>
     </div>
-  )
+  );
 }
