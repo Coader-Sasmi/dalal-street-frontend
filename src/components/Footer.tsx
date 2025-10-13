@@ -165,7 +165,7 @@ const Footer = () => {
           <p className="text-[0.8rem]">Name: Dalal Street Private Limited</p>
           <p className="text-[0.8rem]">{`Address: SEBI Bhavan, Plot No.C4-A, 'G' Block, Bandra-Kurla Complex, Bandra (East), Mumbai - 400051, Maharashtra.`}</p>
           <p className="text-[0.8rem]">Tel: +91-9148638118</p>
-          <p className="text-[0.8rem]">Email: research@thedalastreethub.com</p>
+          <p className="text-[0.8rem]">Email: research@thedalalstreethub.com</p>
           {/* <p className="text-[0.8rem]">CIN: U12345KA2025PTC123456</p> */}
           {/* <p className="text-[0.8rem]">GST: 29ABCDE1234F1Z0</p> */}
           </div>
@@ -199,7 +199,7 @@ const Footer = () => {
           <div className="flex flex-col gap-1">
 
           <p className="text-[0.8rem]">Name: Mr Santosh Veergond naik</p>
-          <p className="text-[0.8rem]">Email: compliance@thedalastreethub.com</p>
+          <p className="text-[0.8rem]">Email: compliance@thedalalstreethub.com</p>
           <p className="text-[0.8rem]">Tel: +91-9148638118</p>
           </div>
 

@@ -57,7 +57,7 @@ export default function Navbar() {
           </Link>
 
           {/* 💻 Desktop Menu */}
-          <div className="hidden md:flex space-x-10 items-center">
+          <div className="hidden lg:flex space-x-10 items-center">
             <Link
               href="service"
               className="text-white font-medium text-sm tracking-wider hover:text-gray-300 transition"
@@ -76,6 +76,12 @@ export default function Navbar() {
             >
               Research Report
             </button>
+            {/* <Link
+              href="payment-details"
+              className="text-white font-medium text-sm tracking-wider hover:text-gray-300 transition"
+            >
+              Payment Details
+            </Link> */}
           </div>
 
           {/* 🔘 Right Buttons */}
@@ -162,7 +168,7 @@ export default function Navbar() {
 
       {/* 📱 Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t shadow-md absolute top-full left-0 w-full z-50">
+        <div className="lg:hidden bg-white border-t shadow-md absolute top-full left-0 w-full z-50">
           <div className="px-6 py-4 space-y-4">
             <Link
               href="service"
@@ -182,6 +188,12 @@ export default function Navbar() {
             >
               Research Report
             </button>
+              {/* <Link
+              href="payment-details"
+              className="block text-gray-800 font-semibold hover:text-gray-400 transition"
+            >
+              Payment Details
+            </Link> */}
             <button
               onClick={() => setIsOpenLogin(true)}
               className="block text-[#bd3f41] font-semibold hover:text-gray-400 transition"

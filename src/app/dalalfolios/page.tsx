@@ -5,7 +5,7 @@ import ModelPortfolios from '@/components/streetfolios/ModelPortfolios'
 import WhyChoosePortfolios from '@/components/streetfolios/WhyChoose'
 
 
-export default function page() {
+export default function Page() {
    
   return (
     <>
