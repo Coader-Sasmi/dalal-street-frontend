@@ -36,7 +36,7 @@ export default function CreditsFeatures() {
             <div className="bg-green-600 rounded-full p-2 w-fit">
             <CheckCircle className="text-white text-6xl!" />
             </div>
-            <h3 className="text-xl text-start font-bold text-gray-800">Credits remain intact if the trade isn’t successful.</h3>
+            <h3 className="text-xl text-start font-bold text-gray-800">Credits remain intact if the trade {`isn’t`} successful.</h3>
             <p className="mt-2 text-gray-600 text-start">
               {`Your credits are preserved if a trade doesn't reach expected target.`}
             </p>
