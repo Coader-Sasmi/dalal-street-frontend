@@ -31,7 +31,7 @@ export default function Navbar() {
               className="inline-block text-[#bd3f41] text-sm sm:text-base font-semibold px-6 text-center"
             >
               🔒 To ensure a secure transaction, please verify details with our support team ☎️{" "}
-              <span className="font-semibold">+91-9148638118</span> before making payment.
+              <span className="font-semibold">+91-7248909366</span> before making payment.
             </p>
           ))}
         </div>
@@ -98,7 +98,7 @@ export default function Navbar() {
             >
               Register
             </button>
-            <Link href="tel:+919148638118" className="phone-btn cursor-pointer">
+            <Link href="tel:+917248909366" className="phone-btn cursor-pointer">
               <Phone className="w-5 h-5 text-blue-700 phone-icon" />
             </Link>
           </div>
@@ -207,7 +207,7 @@ export default function Navbar() {
               Register
             </button>
             <Link
-              href="tel:+919148638118"
+              href="tel:+917248909366"
               className="flex justify-center bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition w-fit mx-auto"
             >
               <Phone className="w-6 h-6 text-blue-700 phone-icon" />

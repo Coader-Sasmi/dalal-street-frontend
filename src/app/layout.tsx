@@ -22,7 +22,7 @@ export default function RootLayout({
           {children}
         </main>
           <Link
-          href="https://api.whatsapp.com/send?phone=919148638118"
+          href="https://api.whatsapp.com/send?phone=917248909366"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-10 right-4 z-50 flex items-center justify-center w-12 h-12 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition"
