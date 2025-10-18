@@ -1,3 +1,5 @@
+'use client';
+import ContactModalForm from "@/components/contact-modal-form";
 import CreditsFeatures from "@/components/home/CreditsFeatures";
 import CreditsModel from "@/components/home/CreditsModel";
 import InvestorsHub from "@/components/home/InvestorsHub";
@@ -5,9 +7,16 @@ import OurProcess from "@/components/home/OurProcess";
 import ResearchCalls from "@/components/home/ResearchCalls";
 import TeamSpace from "@/components/home/TeamSpace";
 import WhyDalalStreet from "@/components/home/WhyDalalStreet";
+import { Contact } from "lucide-react";
 import Head from "next/head";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
+   useEffect(() => {
+    const timer = setTimeout(() => setOpen(true), 6000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
     <Head>
@@ -39,6 +48,7 @@ export default function Home() {
         />
         <meta name="twitter:image" content="/path-to-social-image.jpg" />
       </Head>
+      <ContactModalForm open={open} onClose={() => setOpen(false)}/>
     <ResearchCalls/>
     <CreditsModel/>
     <CreditsFeatures/>
