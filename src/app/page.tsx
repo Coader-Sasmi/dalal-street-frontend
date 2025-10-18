@@ -1,5 +1,5 @@
 'use client';
-import ContactModalForm from "@/components/contact-modal-form";
+import ContactModalForm from "@/components/Contact-modal-form";
 import CreditsFeatures from "@/components/home/CreditsFeatures";
 import CreditsModel from "@/components/home/CreditsModel";
 import InvestorsHub from "@/components/home/InvestorsHub";

@@ -23,7 +23,7 @@ export default function ContactModalForm({ open, onClose }: ContactModalFormProp
   const [statusMessage, setStatusMessage] = useState("")
 
   // Initialize EmailJS once
-  if (typeof window !== "undefined" && !window.emailjs) {
+  if (typeof window !== "undefined" ) {
     emailjs.init("xODcGwjUxBTXKGhuX")
   }
 
