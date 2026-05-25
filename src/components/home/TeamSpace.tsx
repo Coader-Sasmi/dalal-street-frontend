@@ -12,7 +12,7 @@ export default function TeamSpace() {
           {/* Large main image */}
           <div className="w-full h-64 sm:h-80 md:h-[26rem] lg:h-[31rem] overflow-hidden rounded-xl">
             <img
-              src="/Team.jpg"
+              src="/Team.jpeg"
               alt="team"
               className="w-full h-full object-cover"
             />
