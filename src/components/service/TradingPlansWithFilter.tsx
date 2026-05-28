@@ -97,7 +97,7 @@ const TradingPlansWithFilter = () => {
       selectedPeriod.length === 0 || selectedPeriod.includes(plan.period);
     return matchRisk && matchType && matchPeriod;
   });
-   const handleClick = () => {
+  const handleClick = () => {
     window.open("https://razorpay.me/@indammaarjunsonar", "_blank"); // opens in a new tab
   };
 
@@ -196,13 +196,12 @@ const TradingPlansWithFilter = () => {
 
                 <div className="flex flex-wrap gap-2 mb-3">
                   <span
-                    className={`px-2 py-1 rounded-md text-xs font-medium ${
-                      plan.risk.includes("High")
+                    className={`px-2 py-1 rounded-md text-xs font-medium ${plan.risk.includes("High")
                         ? "bg-red-100 text-red-700"
                         : plan.risk.includes("Moderate")
-                        ? "bg-orange-100 text-orange-700"
-                        : "bg-green-100 text-green-700"
-                    }`}
+                          ? "bg-orange-100 text-orange-700"
+                          : "bg-green-100 text-green-700"
+                      }`}
                   >
                     {plan.risk}
                   </span>
@@ -226,14 +225,14 @@ const TradingPlansWithFilter = () => {
                   {/* Min. Investment: */}
                   <span className="font-semibold">{plan.investment}</span>
                 </span>
-                <button onClick={handleClick}
+                {/* <button onClick={handleClick}
                  className="bg-blue-600 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition">
                   BUY NOW
-                </button>
-                
+                </button> */}
+
               </div>
             </div>
-            
+
           ))
         ) : (
           <p className="text-center text-gray-500 mt-10">No plans match your filters.</p>
