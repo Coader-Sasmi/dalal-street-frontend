@@ -45,7 +45,7 @@ const plansData: Plan[] = [
     period: "Long Term",
     registered: "49686",
     investment: "quarter (3 months) with GST",
-    credits: "₹3,15,000/-",
+    credits: "₹2,80,000/-",
   },
   {
     title: "PLATINUM",

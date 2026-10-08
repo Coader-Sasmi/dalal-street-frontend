@@ -16,7 +16,7 @@ export default function ModelPortfolios() {
       risk: "High Volatile",
       minInvestment: "₹10,455",
       registered: "1926 People Registered",
-      updated: "Last Updated: 25 Aug",
+      // updated: "Last Updated: 25 Aug",
       slots: "2 Limited Slots Left",
     },
     {
@@ -26,7 +26,7 @@ export default function ModelPortfolios() {
       risk: "Low Volatile",
       minInvestment: "₹12,034",
       registered: "544 People Registered",
-      updated: "Last Updated: 25 Aug",
+      // updated: "Last Updated: 25 Aug",
       slots: "3 Limited Slots Left",
     },
     {
@@ -36,7 +36,7 @@ export default function ModelPortfolios() {
       risk: "Low Volatile",
       minInvestment: "₹25,589",
       registered: "2556 People Registered",
-      updated: "Last Updated: 25 Aug",
+      // updated: "Last Updated: 25 Aug",
       slots: "5 Limited Slots Left",
     },
     {
@@ -46,7 +46,7 @@ export default function ModelPortfolios() {
       risk: "High Volatile",
       minInvestment: "₹11,464",
       registered: "875 People Registered",
-      updated: "Last Updated: 25 Aug",
+      // updated: "Last Updated: 25 Aug",
       slots: "1 Limited Slot Left",
     },
     {
@@ -56,7 +56,7 @@ export default function ModelPortfolios() {
       risk: "High Volatile",
       minInvestment: "₹13,118",
       registered: "987 People Registered",
-      updated: "Last Updated: 25 Aug",
+      // updated: "Last Updated: 25 Aug",
       slots: "2 Limited Slots Left",
     },
     {
@@ -66,7 +66,7 @@ export default function ModelPortfolios() {
       risk: "High Volatile",
       minInvestment: "₹8,452",
       registered: "566 People Registered",
-      updated: "Last Updated: 25 Aug",
+      // updated: "Last Updated: 25 Aug",
       slots: "3 Limited Slots Left",
     },
     {
@@ -76,7 +76,7 @@ export default function ModelPortfolios() {
       risk: "High Volatile",
       minInvestment: "₹910",
       registered: "89 People Registered",
-      updated: "Last Updated: 25 Aug",
+      // updated: "Last Updated: 25 Aug",
       slots: "2 Limited Slots Left",
     },
   ];
@@ -129,8 +129,8 @@ export default function ModelPortfolios() {
               </div>
 
               {/* Footer */}
-              <div className="flex items-center justify-between mt-auto">
-                <span className="text-xs text-gray-400">{portfolio.updated}</span>
+              <div className="flex items-center justify-between mt-auto mt-4">
+                {/* <span className="text-xs text-gray-400">{portfolio.updated}</span> */}
                 <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium">
                   Subscribe Now
                 </button>

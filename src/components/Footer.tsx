@@ -211,7 +211,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="py-4 flex md:flex-row flex-col items-center gap-3 justify-between text-white text-sm">
-          <p>All Rights Rserved | © Copyright {new Date().getFullYear()}</p>
+          <p>All Rights Reserved | © Copyright {new Date().getFullYear()}</p>
           <Link href="privacy" className="hover:text-white">Privacy Policy</Link>
           <Link href="terms" className="hover:text-white">Terms of Use</Link>
         </div>

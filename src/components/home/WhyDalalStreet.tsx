@@ -67,6 +67,9 @@ export default function WhyDalalStreet() {
         <p className="mt-2 text-gray-600">
           Trading and Investment Insights Based on Market Conditions Suitable For Everyone.
         </p>
+        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold mt-5">
+          Get 1 Free Research Calls
+        </button>
 
         {/* Features Grid */}
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
