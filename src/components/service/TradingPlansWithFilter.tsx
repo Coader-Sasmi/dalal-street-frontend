@@ -75,6 +75,7 @@ const TradingPlansWithFilter = () => {
   const [selectedRisk, setSelectedRisk] = useState<string[]>([]);
   const [selectedType, setSelectedType] = useState<string[]>([]);
   const [selectedPeriod, setSelectedPeriod] = useState<string[]>([]);
+  const [showQR, setShowQR] = useState(false);
 
   const handleCheckbox = (
     value: string,
@@ -225,10 +226,12 @@ const TradingPlansWithFilter = () => {
                   {/* Min. Investment: */}
                   <span className="font-semibold">{plan.investment}</span>
                 </span>
-                {/* <button onClick={handleClick}
-                 className="bg-blue-600 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition">
+                <button 
+                // onClick={handleClick}
+                onClick={() => setShowQR(true)}
+                 className="bg-blue-600 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition cursor-pointer">
                   BUY NOW
-                </button> */}
+                </button>
 
               </div>
             </div>
@@ -238,6 +241,32 @@ const TradingPlansWithFilter = () => {
           <p className="text-center text-gray-500 mt-10">No plans match your filters.</p>
         )}
       </div>
+      {/* QR Modal */}
+        {showQR && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+            onClick={() => setShowQR(false)}
+          >
+            <div
+              className="relative bg-white rounded-2xl p-6 shadow-xl max-w-sm w-full text-center"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setShowQR(false)}
+                className="absolute top-3 right-4 text-gray-500 hover:text-gray-800 text-2xl leading-none cursor-pointer"
+                aria-label="Close"
+              >
+                &times;
+              </button>
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Scan to Pay</h3>
+              <img
+                src="/QR_CODE1.jpeg"
+                alt="Payment QR Code"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+          </div>
+        )}
     </div>
   );
 };
